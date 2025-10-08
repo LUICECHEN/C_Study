@@ -1,3 +1,6 @@
+#define METHOD 1
+
+#if METHOD == 1
 #include <iostream>
 #include <math.h>
 #include <vector>
@@ -49,3 +52,26 @@ int main()
     }
     return 0;
 }
+
+#else
+//方法二:算法优化
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+    cout << "请输入半菱形高度n" << endl;
+    int n = 0;
+    cin >> n;
+    for (int i = 0; i < 2 * n + 1; i++) {
+        for (int j = 0; j < 2 * n + 1; j++) {
+            if (abs(i - n) + abs(j - n) == n) {
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+#endif
