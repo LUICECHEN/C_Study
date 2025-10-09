@@ -2,6 +2,7 @@
  
 using namespace std;
  
+//拷贝构造函数，用于以对象为参数的函数，函数调用时会使用拷贝构造函数，创建一个对象副本，直到函数执行完毕
 class Line
 {
    public:
