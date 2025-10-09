@@ -7,14 +7,15 @@ class Line
    public:
       void setLength( double len );
       double getLength( void );
-      Line();  // 这是构造函数
+      Line(double len);  // 这是构造函数
  
    private:
       double length;
 };
  
 // 成员函数定义，包括构造函数
-Line::Line(void)
+//可以使用length(len)来初始化成员变量
+Line::Line(double len): length(len)
 {
     cout << "Object is being created" << endl;
 }
@@ -31,7 +32,7 @@ double Line::getLength( void )
 // 程序的主函数
 int main( )
 {
-   Line line;
+   Line line(10.0);
  
    // 设置长度
    line.setLength(6.0); 
