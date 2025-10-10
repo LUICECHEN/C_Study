@@ -3,7 +3,7 @@ using namespace std;
 namespace A
 {
     int a = 100;
-    int fun()
+    void fun()
     {
         cout<<"a = "<<a<<endl;
     }
@@ -11,7 +11,7 @@ namespace A
     namespace B            //嵌套一个命名空间B
     {
         int a =20;
-        int fun()
+        void fun()
         {
              cout<<"a = "<<a<<endl;
         }
