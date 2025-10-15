@@ -17,7 +17,7 @@ public class test {
         /*//传统写法(比较臃肿)
         Scanner scanner = null;
         try {
-            scanner = new Scanner((new File("D:\\ccc\\c.txt")));
+            scanner = new Scanner((new File("D://ccc//c.txt")));
             while (scanner.hasNext()){
                 System.out.println(scanner.next());
             }
