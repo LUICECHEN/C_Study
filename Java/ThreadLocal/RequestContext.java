@@ -1,5 +1,10 @@
 package ThreadLocal;
 
+/**
+ * 每个线程都会有一个自己的ThreadLocalMap(类似于HashMap),
+ * 键对应的是每一个ThreadLocal对象，而值则对应的是该ThreadLocal对象存储的信息
+ *
+ */
 public class RequestContext {
     private static ThreadLocal<Long> USER_ID = new ThreadLocal<>();
 
