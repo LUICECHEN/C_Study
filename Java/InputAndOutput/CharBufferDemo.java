@@ -2,6 +2,14 @@ package InputAndOutput;
 
 import java.nio.CharBuffer;
 
+/**
+ * Buffer有4个重要属性:
+ * 1.capacity(容量)
+ * 2.limit(界限，读模式表示使用多少空间，写模式表示总共有多少空间可写(此时等于capacity))
+ * 3.position(位置,表示下一次读写的位置)
+ * 4.mark(标记，可选属性，表示可以直接跳到这里)
+ */
+
 public class CharBufferDemo {
     public static void main(String[] args) {
         CharBuffer buffer = CharBuffer.allocate(8);
